@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="css/reg.css">
+  </head>
+  <body>
+    <br>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" />
+            </label>
+            <p class="forgot-pass">Forgot password?</p>
+            <button type="button" class="submit">Sign In</button>
+         
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Create your Account</h2>
+                <label>
+                    <span>Full Name</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <label>
+                    <span>Mobile Number</span>
+                    <input type="number" />
+                </label>
+                <label>
+                    <span>Work status</span>
+                </label>
+                    <label class="labelexpanded"> 
+                        <input type="radio" name="targetgroup"> <div class="radio-btns"> <img src="img/001.png"> <p> I'm Experienced </p> </div> 
+                    </label>
+                    
+                    <label class="labelexpanded">
+                        <input type="radio" name="targetgroup"> <div class="radio-btns"> <img src="img/002.png"> <p> I'm Fresher </p> </div> 
+                        <br><br><br>
+                    </label>
+                    <br><br><br>
+                    <label >Upload Your Resume<input type="file" id="myFile" name="filename"></label>
+                <button type="button" class="submit">Sign Up</button>               
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+    
+
+  </body>
+</html>
